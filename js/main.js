@@ -175,23 +175,23 @@ $(document).ready(function(){
 /* ==========  START GOOGLE MAP ========== */
 
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
+//google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-	    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+    var myLatLng = new google.maps.LatLng(-23.607799, -46.724308);
 
-	    var mapOptions = {
-	        zoom: 15,
-	        center: myLatLng,
-	        disableDefaultUI: true,
-	        scrollwheel: false,
-	        navigationControl: true,
-	        mapTypeControl: false,
-	        scaleControl: false,
-	        draggable: true,
+    var mapOptions = {
+        zoom: 15,
+        center: myLatLng,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        navigationControl: true,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: true,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -253,9 +253,9 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(22.402789, 91.822156),
+        position: new google.maps.LatLng(-23.607799, -46.724308),
         map: map,
-		icon: 'img/icons/map-marker.png',
+        icon: 'img/icons/map-marker.png',
     });
 }
 
